@@ -8,16 +8,27 @@
 </head>
 <body>
   <div class="container">
+    <div class="background"></div>
     <div class="Todo-app">
-    <h2>To-Do-List <img src="icon.png" alt=""></h2>
+    <h2>To-Do-List <img src="icon.png" alt=""><span id="date"></span></h2>
+    
+    <div class="controls">
+    <div class="filters">
+      <span id="all" class="active">All</span>
+      <span id="pending">Pending</span>
+      <span id="completed">Completed</span>
+    </div>
+    
+    <button class="clear-btn">Clear All</button>
+  </div>
     <div class="row">
       <input type="text" id="input-box" placeholder="Add your text">
       <button onclick="addTask()">Add</button>
     </div>
     <ul id="list-container">
-      <li class="checked">Task 1</li>
-      <li>Task 2</li>
-      <li>Task 3</li>
+     <!-- <li class="checked"></li>
+      <li></li>
+      <li></li>-->
     </ul>
   </div>
   </div>
