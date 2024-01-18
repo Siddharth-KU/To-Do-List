@@ -145,3 +145,24 @@ ul li span:hover{
  margin-left: 215px;
  font-family: 'Dancing Script', 'cursive';
 }
+.tasks-container{
+  position: relative;
+  margin-top: 20px;
+  height: 150px;
+   overflow-y: auto;
+   /* min-height: 150px; 
+ max-height: 350px;  */
+ overflow-y: auto;
+ scrollbar-width: thin;
+ scrollbar-color: #655b5b transparent;
+ padding-right: 10px;
+ }
+ ::-webkit-scrollbar-track{
+   box-shadow: inset 0 0 15px rgba(0,0,0,0,5);
+ }
+ ::-webkit-scrollbar{
+   width:5px;
+ }
+ ::-webkit-scrollbar-thumb{
+   background: #4e4747;
+ }
